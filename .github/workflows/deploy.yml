@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Triggers the workflow on push to the main branch
+    branches: [main]
 
 permissions:
   contents: read
@@ -26,7 +26,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install dependencies
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Tells GitHub to upload your Vite build folder
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
