@@ -4,6 +4,7 @@ import Brochure from "../pages/Brochure"
 import AnswerKey from "../pages/AnswerKey";
 import RootLayout from "../layouts/RootLayout";
 import SamplePaper from "../pages/SamplePaper";
+import Gallery from '../pages/Gallery'
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
                 path: "sample",
                 element: <SamplePaper />
             }
+            ,{
+                path: "gallery",
+                element: <Gallery />
+            },
         ],
     },
 ], {

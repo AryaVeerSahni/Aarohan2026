@@ -137,8 +137,14 @@ export default function Header() {
                         </NavLink>
                     </li>
                     <li>
-                        <a href="#about-container" className="about-link" onClick={handleScrollToAbout}>GALLERY</a>                      
-                    </li>
+                       
+                        <NavLink
+                            to="/gallery"
+                            className={({ isActive }) => isActive ? "active-link" : "inactive-link"}
+                            onClick={closeMenu}>
+                            GALLERY
+                        </NavLink>                       
+                        </li>
                 </ul>
             </nav>
         </header>
