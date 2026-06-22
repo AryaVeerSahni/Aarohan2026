@@ -1,0 +1,117 @@
+.hero-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15vh 0 20vh;
+}
+
+.hero-div {
+    display: flex;
+    padding: 25px;
+    border: 2px solid #7047A5;
+    border-radius: 10px;
+    background-color: #00000095;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: stretch;
+    width: 80vw;
+}
+
+.hero-section {
+    display: flex;
+    align-items: stretch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border-right: 1px solid #7047A5;
+    padding-right: 15px;
+    margin-right: 15px;
+    flex-grow: 1;
+    height: auto;
+}
+
+.last {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.hero-section img {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 0 0;
+    align-self: center;
+}
+
+.hero-section h3 {
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .hero-div {
+        flex-wrap: wrap;
+        gap: 30px 15px;
+        justify-content: center;
+    }
+
+    .hero-section {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        
+        flex-grow: 0; 
+        flex-shrink: 0;
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-div-container {
+        padding: 120px 0;
+    }
+
+    .hero-div {
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-section img {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-div {
+        flex-direction: column;
+        width: 85vw;
+        padding: 15px;
+    }
+
+    .hero-section {
+        border-right: none;
+        border-bottom: 1px solid #7047A5;
+        padding: 20px 0;
+        margin: 0;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .last {
+        border-bottom: none;
+    }
+    
+    .hero-section img {
+        margin: 0 15px 0 0;
+        width: 50px;
+        height: 50px;
+    }
+}

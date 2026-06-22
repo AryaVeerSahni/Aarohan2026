@@ -1,0 +1,79 @@
+.process-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-div-container h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.75rem;
+}
+
+.rounds-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25vh;
+}
+
+.round1,
+.round2 {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid #7047A5;
+    border-radius: 20px;
+    background-color: #11111199;
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.round1 h6,
+.round2 h6 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: gold;
+    letter-spacing: 0.75rem;
+    border-bottom: 1px solid #7047A5;
+}
+
+.round1 p,
+.round2 p{
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .round1, .round2 {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rounds-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .round1, .round2 {
+        width: 90vw;
+    }
+
+    .process-div-container h6 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+
+    .round1 h6, .round2 h6 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+}

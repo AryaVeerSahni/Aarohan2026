@@ -1,0 +1,51 @@
+.about-apogee-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-apogee-div {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid #7047A5;
+    border-radius: 20px;
+    background-color: #11111199;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    perspective: 500px;
+}
+
+.about-apogee-div h6 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.75rem;
+    border-bottom: 1px solid #7047A5;
+}
+
+.about-apogee-div p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-apogee-div {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-apogee-div {
+        width: 90vw;
+        padding: 15px;
+    }
+    .about-apogee-div h6 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+}
