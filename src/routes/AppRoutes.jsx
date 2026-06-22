@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         ],
     },
 ], {
-    basename: '/Aarohan2026Test',
+    basename: '/Aarohan2026',
 })
 
 export default function AppRoutes() {
