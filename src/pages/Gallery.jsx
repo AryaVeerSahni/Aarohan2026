@@ -35,7 +35,7 @@ export default function Gallery() {
                 keyboard={true}
                 autoplay={{ delay: 1500,  }}
                 cardsEffect={{
-                    perSlideOffset: window.innerWidth <= 750 ? 20 : 5,  
+                    perSlideOffset: window.innerWidth >= 750 ? 20 : 5,  
                     perSlideRotate: 3,   
                     rotate: true,
                     slideShadows: false,
